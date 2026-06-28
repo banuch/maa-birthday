@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+body{
+  text-align:center;
+  background-color:lightblue;
+  color:navy;
+}
+
+img{
+  width:300px;
+  margin:10px;
+  border:3px solid pink;
+  border-radius:15px;
+  box-shadow:0 0 10px gray;
+}
+</style>
+</head>
+
+<body>
+
+<h2 id="text"></h2>
+
+<h1 style="color:navy">🎁 Here is my small surprise for you maa 🎁</h1>
+
+<a href="#" onclick="showImage()"><h2>Click Here</h2></a>
+
+<br><br>
+
+<img id="pic" src="maa.webp" width="300" style="display:none; margin:auto; border: 3px solid pink; border-radius: 10px; box-shadow: 0 0 10px gray;">
+<img id="pic2" src="maaa.webp" width="300" style="display:none; margin:auto; border: 3px solid pink; border-radius: 10px; box-shadow: 0 0 10px gray;">
+<img id="pic3" src="mom.jpg" width="300" style="display:none; margin:auto; border: 3px solid pink; border-radius: 10px; box-shadow: 0 0 10px gray;">
+<img id="pic4" src="mom2.webp" width="300" style="display:none; margin:auto; border: 3px solid pink; border-radius: 10px; box-shadow: 0 0 10px gray;">
+<img id="pic5" src="sesi.jpg" width="300" style="display:none; margin:auto; border: 3px solid pink; border-radius: 10px; box-shadow: 0 0 10px gray;">
+
+<script>
+let message = "Happy Birthday...To the most cutest and amazing maa,thank you for filling my life with love, hugs and yummy food also thank you for being with me at my most challenging situations,you are most precious for me.Happy Birthday my first and best friend, my cheerleader, and my adviser. Enjoy your day with joy and happiness just like you bring to us..";
+let i = 0;
+
+function typeWriter() {
+  if (i < message.length) {
+    document.getElementById("text").innerHTML += message.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
+
+// start typing after page loads
+window.onload = typeWriter;
+
+function showImage() {
+  document.getElementById("pic").style.display = "block";
+  document.getElementById("pic2").style.display = "block";
+  document.getElementById("pic3").style.display = "block";
+  document.getElementById("pic4").style.display = "block";
+  document.getElementById("pic5").style.display = "block";
+}
+</script>
+
+</body>
+</html>

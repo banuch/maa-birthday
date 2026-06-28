@@ -1,0 +1,18 @@
+<html>
+<head>
+<title><i>HAPPY BIRTHDAY MAA</i><title>
+<style>
+<body style="text-align:center; background-color:light blue; color:light pink;">
+<h1>Here is my small surprise for you maa<'h1>
+<a href="#" onclick="showImage()">Click here</a>
+</br></br>
+
+<img id="pic" src="maa.webp" width="300"style="display:none;">
+
+</script>
+function showImage(){
+document.getElementById("pic").style.display="block";
+}
+</script>
+</body>
+</html>
